@@ -10,13 +10,5 @@
   <%= @user.email %>
 </p>
 
-<p>
-  <% micropost = @user.microposts.first %>
-  <strong>First micropost</strong>
-  <p> &nbsp;&nbsp;<strong>* Created at: </strong> <%= micropost.created_at %></p>
-  <p> &nbsp;&nbsp;<strong>* Updated at: </strong> <%= micropost.updated_at %></p>
-  <p> &nbsp;&nbsp;<strong>* Content: </strong> <%= micropost.content %></p>
-</p>
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
